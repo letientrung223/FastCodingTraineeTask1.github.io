@@ -1,0 +1,38 @@
+@import 'reset';
+@import 'header';
+@import 'collection';
+@import 'minimalist';
+@import 'special';
+@import 'offers';
+@import 'mailing';
+@import 'footer';
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Source Sans 3", sans-serif;
+}
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.container{
+    max-width: 1116px;
+    margin:0 auto;
+}
+.header-circle {
+    position: absolute;
+    width: 976px;
+    height: 976px;
+    background-color: #50c1c7;
+    border-radius: 50%;
+    z-index: -1;
+}
+::placeholder{
+    color: black;
+}
+
+
