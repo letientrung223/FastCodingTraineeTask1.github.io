@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     margin-top: 55px;
     margin-bottom: 105px;
     &-container{
@@ -13,7 +14,6 @@
         padding-left: 30px;
     }
     &-menu{
-        
         display: flex;
         align-items: center;
         flex-grow: 1;
@@ -45,11 +45,7 @@
 .fa-shopping-cart{
     font-size: 20px;
 }
-.header {
-    position: relative;
-}
 
-/* Chỉnh lại vị trí của hình tròn */
 .header-circle {
     top: 485%;
     right: -11%;
@@ -93,8 +89,6 @@
             margin-right: 30px;
             margin-left: 9px;
         }
-        &-menu-list{
-        }
         &-search-input{
             font-size: 13px;
             height: 30px;
@@ -130,9 +124,6 @@
 
 @media screen and (max-width: 768px) {
     .header{
-        
-      
-        
         &-menu-item{
            margin-right: 20px;
            font-size: 13px;

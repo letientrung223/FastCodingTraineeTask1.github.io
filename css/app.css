@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -47,6 +46,7 @@ html {
 }
 
 .header {
+  position: relative;
   margin-top: 55px;
   margin-bottom: 105px;
 }
@@ -94,11 +94,6 @@ html {
   font-size: 20px;
 }
 
-.header {
-  position: relative;
-}
-
-/* Chỉnh lại vị trí của hình tròn */
 .header-circle {
   top: 485%;
   right: -11%;
@@ -1018,6 +1013,9 @@ html {
   }
 }
 @media screen and (max-width: 431px) {
+  .offers {
+    margin-bottom: 275px;
+  }
   .offers-top {
     height: auto;
     display: flex;
@@ -1205,7 +1203,7 @@ html {
 @media screen and (max-width: 431px) {
   .mailing {
     background: #f4f6f5;
-    padding-top: 158px;
+    padding-top: 100px;
     padding-bottom: 160px;
   }
   .mailing-container {
@@ -1280,7 +1278,6 @@ html {
 .footer-top {
   display: flex;
   padding-bottom: 110px;
-  border-bottom: 1px solid black;
   margin-bottom: 10px;
   justify-content: space-between;
 }
@@ -1334,7 +1331,6 @@ html {
 
 .footer {
   position: relative;
-  overflow: hidden;
 }
 
 .footer-circle {
@@ -1347,6 +1343,13 @@ html {
   background-color: #50c1c7;
   border-radius: 50%;
   z-index: -1;
+}
+
+.made-in-line {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.1607843137);
+  position: relative;
+  z-index: -2;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1404,6 +1407,9 @@ html {
   }
 }
 @media (min-width: 343px) and (max-width: 400px) {
+  .department-left {
+    margin-right: 70px;
+  }
   .footer-circle {
     width: 800px;
     height: 800px;

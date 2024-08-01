@@ -184,34 +184,38 @@
 }
 
 @media screen and (max-width: 431px) {
-    .offers-top{
+    .offers {
+        margin-bottom: 275px;
+    
+    &-top{
         height: auto;
         display: flex;
         flex-direction: column;
         // margin-bottom: 100px;
         margin: 0 auto ;
     }
-    .offers-top-left {
+    &-top-left {
         width: 370px;
         height: 220px;
         // margin-right: 30px;
         margin-bottom: 30px;
     }
-    .offers-top-right-item {
+    &-top-right-item {
         width: 370px;
         height: 220px;
         // margin-right: 30px;
         margin-bottom: 30px;
     }
-    .offers-bottom{
+    &-bottom{
         display: flex;
         flex-direction: column;
     }
-    .offers-bottom-left,.offers-bottom-right{
+    &-bottom-left,&-bottom-right{
         width: 370px;
         height: 220px;
         margin-bottom: 30px;
     }
+}
 }
 @media screen and (max-width: 912px) {
 }
