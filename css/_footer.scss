@@ -31,6 +31,9 @@
     &-list{
         line-height: 1.6;
     }
+    &-item-link{
+        color:black;
+    }
 }
 .contact{
     &-name{
@@ -44,6 +47,9 @@
     }
     &-list{
         line-height: 1.6;
+    }
+    &-item-link{
+        color:black;
     }
 }
 .media{
@@ -141,9 +147,7 @@
         transform: translate(-14%, -55%);
     }
 }
-@media screen and (max-width: 431px) {
-    
-    
+@media screen and (max-width: 431px) {  
 }
 @media (min-width: 343px) and (max-width: 400px) {
     .department {

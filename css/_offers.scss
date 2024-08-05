@@ -1,6 +1,7 @@
 .offers{
     margin-bottom: 167px;
     &-top{
+        text-align: center;
         height: 543px;
         display: flex;
         margin-bottom: 26px;
@@ -15,6 +16,7 @@
         }
     }
     &-bottom{
+        text-align: center;
         display:flex;
         height:382px;
         margin-bottom: 30px;
@@ -47,10 +49,10 @@
 .offers-top-right-item {
     position: relative; 
 }
-.offers-top-left::before, 
-.offers-bottom-left::before, 
-.offers-bottom-right::before,
-.offers-top-right-item::before {
+.offers-top-left:hover::before, 
+.offers-bottom-left:hover::before, 
+.offers-bottom-right:hover::before,
+.offers-top-right-item:hover::before {
     content: '';
     position: absolute;
     top: 0;
@@ -60,22 +62,22 @@
     background-color: rgba(244, 167, 95, 0.85);  
     z-index: 1;  
 }
-.offers-bottom-left::before{
+.offers-bottom-left:hover::before{
     background-color: rgba(121, 121, 127, 0.85);
 }
-.offers-bottom-right::before{
+.offers-bottom-right:hover::before{
     background-color: rgba(126, 202, 208, 0.85);;
 }
-#offers-top-right-item1::before{
+#offers-top-right-item1:hover::before{
     background-color: rgba(222, 115, 141, 0.85);
 }
-#offers-top-right-item2::before{
+#offers-top-right-item2:hover::before{
     background-color: rgba(162, 155, 196, 0.85);
 }
-.offers-top-left::after, 
-.offers-bottom-left::after, 
-.offers-bottom-right::after,
-.offers-top-right-item::after {
+.offers-top-left:hover::after, 
+.offers-bottom-left:hover::after, 
+.offers-bottom-right:hover::after,
+.offers-top-right-item:hover::after {
     content: attr(data-content);
     position: absolute;
     top: 50%;
@@ -87,7 +89,7 @@
     z-index: 2;  
     max-width: 200px;
 }
-.offers-bottom-left::after{
+.offers-bottom-left:hover::after{
     color: white;  
 }
 
@@ -103,7 +105,17 @@
     border-radius: 3px; 
     z-index: 3; 
     font-size: 14px; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
+.offers-top-left:hover .offers-view,
+.offers-bottom-left:hover .offers-view,
+.offers-bottom-right:hover .offers-view,
+.offers-top-right-item:hover .offers-view {
+    opacity: 1;
+}
+
+
 #offers-top-right-item1 .offers-view,#offers-top-right-item2 .offers-view{
     transform: translate(-50%, 165%); 
 
